@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Video {
+  id          String       @id @default(cuid())
+  youtubeId   String       @unique
+  title       String
+  description String?
+  thumbnail   String?
+  duration    Int?
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  viralShorts ViralShort[]
+}
+
+model ViralShort {
+  id        String   @id @default(cuid())
+  videoId   String
+  title     String
+  startTime Int      // seconds
+  endTime   Int      // seconds
+  status    String   @default("pending") // pending, processing, completed, failed
+  videoUrl  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  video     Video    @relation(fields: [videoId], references: [id], onDelete: Cascade)
+}

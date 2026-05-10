@@ -9,26 +9,28 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@base-ui/react": "^1.4.1",
+    "@fontsource/press-start-2p": "latest",
+    "@prisma/client": "latest",
+    "@tailwindcss/postcss": "^4.3.0",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "lucide-react": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "@prisma/client": "latest",
-    "zod": "latest",
-    "@fontsource/press-start-2p": "latest",
-    "lucide-react": "latest",
-    "class-variance-authority": "latest",
-    "clsx": "latest",
     "tailwind-merge": "latest",
-    "tw-animate-css": "latest"
+    "tw-animate-css": "latest",
+    "zod": "latest"
   },
   "devDependencies": {
-    "prisma": "latest",
-    "tailwindcss": "latest",
-    "typescript": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "eslint": "latest",
-    "eslint-config-next": "latest"
+    "eslint-config-next": "latest",
+    "prisma": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
   }
 }

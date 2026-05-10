@@ -15,6 +15,7 @@
     "@tailwindcss/postcss": "^4.3.0",
     "class-variance-authority": "latest",
     "clsx": "latest",
+    "git-filter-repo": "^0.0.30",
     "lucide-react": "latest",
     "next": "latest",
     "react": "latest",
